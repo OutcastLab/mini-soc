@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini SOC Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>🛡️ Mini SOC Dashboard</h1>
+
+    <div class="alerts">
+        <h2>🚨 Alerts</h2>
+        {% for alert in alerts %}
+            <div class="alert {{ alert.level }}">
+                <b>{{ alert.level }}</b> - {{ alert.message }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="logs">
+        <h2>📜 Logs</h2>
+        {% for log in logs %}
+            <div class="log">
+                {{ log.timestamp }} | {{ log.ip }} | {{ log.event_type }} | {{ log.message }}
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

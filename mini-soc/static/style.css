@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: #38bdf8;
+}
+
+.alert {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.HIGH {
+    background: #7f1d1d;
+}
+
+.MEDIUM {
+    background: #78350f;
+}
+
+.log {
+    background: #1e293b;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+}
